@@ -1,0 +1,727 @@
+/**
+    STYLING UNTUK HOMEPAGE
+    Deskripsi: Stylesheet khusus untuk komponen HomePage
+    Tanggal: [15/11/2025]
+    Developer: [Danu Tri Anugrah]
+ */
+
+/* ==================== IMPORT FONT & ICON ==================== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
+
+/* ==================== GLOBAL STYLES ==================== */
+/* Reset dan base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Container untuk konsistensi layout */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Spacing section default */
+section {
+  padding: 80px 0;
+}
+
+/* ==================== HERO LANDING SECTION ==================== */
+/* Section utama dengan background gradient */
+.hero-landing {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #10a85d 0%, #0b613d 100%);
+  overflow: visible;
+  padding: 120px 0 80px;
+}
+
+/* Overlay pattern untuk efek visual */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Container grid untuk hero content */
+.hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Styling untuk konten teks hero */
+.hero-content {
+  color: white;
+}
+
+/* Badge di atas title hero */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Title hero dengan gradient text */
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #ffffff 0%, #d4f1e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtitle hero */
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.95;
+  margin-bottom: 35px;
+}
+
+/* Tombol CTA hero */
+.btn-hero {
+  background: white;
+  color: #10a85d;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btn-hero:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Container untuk visual/logo hero */
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-animation {
+  width: 100%;
+  max-width: 500px;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+}
+
+/* ==================== WAVE DIVIDER ==================== */
+/* SVG wave untuk transisi antar section */
+.wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 3;
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+/* ==================== SECTION HEADER STYLES ==================== */
+/* Styling untuk header setiap section */
+.section-header-center {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Badge section */
+.section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e8f5f0;
+  color: #10a85d;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Variasi light untuk section dengan background gelap */
+.section-badge.light {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Title section */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 15px;
+}
+
+.section-title.light {
+  color: white;
+}
+
+/* Deskripsi section */
+.section-desc {
+  font-size: 1.1rem;
+  color: #64748b;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-desc.light {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ==================== INTRODUCTION SECTION ==================== */
+.intro-section {
+  background: white;
+}
+
+.intro-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Grid layout untuk intro content */
+.intro-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.intro-logo {
+  width: 100%;
+  max-width: 300px;
+  filter: drop-shadow(0 10px 30px rgba(16, 168, 93, 0.2));
+}
+
+/* Styling teks intro */
+.intro-text {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.intro-text strong {
+  color: #10a85d;
+  font-weight: 700;
+}
+
+/* Grid untuk highlight items */
+.intro-highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: #f8fafc;
+  border-radius: 10px;
+  border-left: 3px solid #10a85d;
+}
+
+.highlight-item i {
+  color: #10a85d;
+  font-size: 1.3rem;
+}
+
+.highlight-item span {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+/* ==================== PILAR SECTION ==================== */
+/* Section dengan background gradient */
+.pilar-section {
+  background: linear-gradient(135deg, #10a85d 0%, #0b613d 100%);
+  color: white;
+}
+
+/* Grid layout untuk kartu pilar */
+.pilar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Styling kartu pilar dengan glassmorphism effect */
+.pilar-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 35px 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.pilar-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-10px);
+}
+
+/* Nomor pilar */
+.pilar-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.2);
+  line-height: 1;
+}
+
+/* Container icon pilar */
+.pilar-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pilar-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* Putihkan icon */
+}
+
+/* Typography kartu pilar */
+.pilar-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.pilar-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* ==================== MISI SECTION ==================== */
+/* Section misi dengan background sama seperti pilar */
+.misi-section {
+  background: linear-gradient(135deg, #10a85d 0%, #0b613d 100%);
+  color: white;
+}
+
+/* Grid layout untuk kartu misi */
+.misi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Styling kartu misi (mirip dengan pilar) */
+.misi-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 35px 25px;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.misi-card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-10px);
+}
+
+.misi-number {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.2);
+  line-height: 1;
+}
+
+.misi-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 20px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.misi-icon-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.misi-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.misi-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+/* ==================== STATISTIK SECTION ==================== */
+.stats-section {
+  background: white;
+}
+
+/* Grid layout untuk statistik */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Styling kartu statistik */
+.stat-card {
+  background: linear-gradient(135deg, #f8fafc 0%, #e8f5f0 100%);
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: #10a85d;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(16, 168, 93, 0.15);
+}
+
+/* Icon statistik */
+.stat-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #10a85d;
+  box-shadow: 0 4px 15px rgba(16, 168, 93, 0.15);
+}
+
+/* Angka statistik */
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #10a85d;
+  margin-bottom: 10px;
+}
+
+/* Label statistik */
+.stat-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+/* ==================== BINAAN DESA SECTION ==================== */
+.binaan-section {
+  background: #f8fafc;
+}
+
+.video-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Wrapper untuk responsive video embed */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  background: #000;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Keterangan video */
+.video-caption {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.video-caption i {
+  color: #10a85d;
+  font-size: 1.2rem;
+}
+
+/* ==================== PARTNER SECTION ==================== */
+.partner-section {
+  background: white;
+  padding: 80px 0;
+}
+
+/* Grid layout untuk logo partner */
+.partner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partner-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Styling logo partner dengan efek grayscale */
+.partner-card img {
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-card:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* ==================== RESPONSIVE BREAKPOINTS ==================== */
+
+/* Tablet Landscape */
+@media (max-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-visual {
+    order: -1; /* Pindah visual ke atas */
+  }
+
+  .intro-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro-left {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Tablet Portrait */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .hero-animation {
+    max-width: 350px;
+  }
+
+  .wave-divider svg {
+    height: 70px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-desc {
+    font-size: 1rem;
+  }
+
+  /* Ubah grid menjadi single column */
+  .pilar-grid,
+  .misi-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-landing {
+    padding: 100px 0 60px;
+  }
+
+  .hero-container {
+    padding: 0 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  /* Perkecil ukuran icon */
+  .pilar-icon-wrapper,
+  .misi-icon-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
+}
+
+/* ==================== UTILITY STYLES ==================== */
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==================== ANIMATION KEYFRAMES ==================== */
+
+/* Animasi fade in dari bawah */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi fade in dari atas */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animasi scale in */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,611 @@
+/* 
+    STYLESHEET HALAMAN ECOMAP DASHBOARD
+    Deskripsi: Styling untuk halaman monitoring data timbulan sampah
+    Tanggal: [15/11/2025]
+    Developer: [Danu Tri Anugrah]
+*/
+
+/* ============================================= */
+/* IMPORT FONTS DAN ICONS */
+/* ============================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css');
+
+/* ============================================= */
+/* GLOBAL STYLES */
+/* ============================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.shop-page {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f9fa;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ============================================= */
+/* HERO SECTION STYLES */
+/* ============================================= */
+.hero-shop {
+  position: relative;
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(@/assets/images/cover/hero_shop.webp); /* Background image */
+  overflow: visible;
+  padding: 140px 0 100px;
+  text-align: center;
+}
+
+/* Overlay gelap di atas background */
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Konten utama hero */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+/* Badge/logo kecil */
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Judul utama hero */
+.hero-title {
+  font-size: 3.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Efek gradient pada teks */
+.gradient-text {
+  background: linear-gradient(90deg, #ffffff 0%, #d4f1e3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtitle hero */
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.95;
+  margin-bottom: 40px;
+}
+
+/* ============================================= */
+/* QUICK ACTIONS STYLES */
+/* ============================================= */
+.quick-actions {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Base style tombol aksi */
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 35px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol Shopee - style khusus */
+.action-btn.shopee {
+  background: white;
+  color: #10a85d;
+}
+
+.action-btn.shopee:hover {
+  background: #d4f1e3;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Tombol WhatsApp - style khusus */
+.action-btn.whatsapp {
+  background: #25d366;
+  color: white;
+}
+
+.action-btn.whatsapp:hover {
+  background: #128c7e;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(37, 211, 102, 0.3);
+}
+
+/* ============================================= */
+/* WAVE DIVIDER STYLES */
+/* ============================================= */
+.wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 3;
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 100px;
+}
+
+/* ============================================= */
+/* MAIN CONTENT STYLES */
+/* ============================================= */
+.shop-content {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+/* ============================================= */
+/* STORE INFO STYLES */
+/* ============================================= */
+.store-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+/* Kartu informasi toko */
+.info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon kartu informasi */
+.info-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, #10a85d 0%, #0b613d 100%);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Teks kartu informasi */
+.info-text h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 5px;
+}
+
+.info-text p {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* ============================================= */
+/* SECTION TITLE STYLES */
+/* ============================================= */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.section-title i {
+  color: #10a85d;
+  font-size: 2.2rem;
+}
+
+/* ============================================= */
+/* PRODUCTS SECTION STYLES */
+/* ============================================= */
+.products-section {
+  margin-bottom: 60px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+/* ============================================= */
+/* PRODUCT CARD STYLES */
+/* ============================================= */
+.product-card {
+  position: relative;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Badge produk (Best Seller, Popular, New) */
+.product-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #10a85d 0%, #0b613d 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  z-index: 2;
+  box-shadow: 0 4px 15px rgba(16, 168, 93, 0.4);
+}
+
+/* Variasi badge: Popular */
+.product-badge.popular {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+/* Variasi badge: New */
+.product-badge.new {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
+}
+
+/* Area gambar produk */
+.product-image {
+  height: 280px;
+  background: linear-gradient(135deg, #e8f5f0 0%, #d4f1e3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Placeholder gambar (icon) */
+.image-placeholder {
+  font-size: 6rem;
+  color: #10a85d;
+  opacity: 0.3;
+}
+
+/* Informasi produk */
+.product-info {
+  padding: 30px;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 12px;
+}
+
+.product-desc {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+/* Aksi produk (tombol) */
+.product-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Tombol Shopee */
+.btn-shopee {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #10a85d;
+  color: white;
+  padding: 14px 24px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.btn-shopee:hover {
+  background: #0b613d;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(16, 168, 93, 0.3);
+}
+
+/* Tombol WhatsApp */
+.btn-whatsapp {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #25d366;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.btn-whatsapp:hover {
+  background: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+/* ============================================= */
+/* CTA SECTION STYLES */
+/* ============================================= */
+.cta-section {
+  margin-bottom: 60px;
+}
+
+.cta-content {
+  background: linear-gradient(135deg, #10a85d 0%, #0b613d 100%);
+  padding: 50px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 40px rgba(16, 168, 93, 0.3);
+}
+
+/* Icon CTA */
+.cta-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* Teks CTA */
+.cta-text {
+  flex: 1;
+  color: white;
+}
+
+.cta-text h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.cta-text p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* Tombol CTA */
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  color: #10a85d;
+  padding: 16px 35px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta:hover {
+  background: #d4f1e3;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================= */
+/* WHY US SECTION STYLES */
+/* ============================================= */
+.why-us-section {
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Kartu fitur */
+.feature-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon fitur */
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #e8f5f0 0%, #d4f1e3 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #10a85d;
+  margin: 0 auto 20px;
+}
+
+.feature-card h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #64748b;
+}
+
+/* ============================================= */
+/* RESPONSIVE STYLES */
+/* ============================================= */
+
+/* Tablet dan mobile kecil */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .wave-divider svg {
+    height: 70px;
+  }
+
+  .quick-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .action-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .store-info {
+    grid-template-columns: 1fr;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 30px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile sangat kecil */
+@media (max-width: 480px) {
+  .hero-shop {
+    padding: 120px 0 80px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .product-info {
+    padding: 25px 20px;
+  }
+
+  .product-name {
+    font-size: 1.3rem;
+  }
+
+  .cta-content {
+    padding: 30px 20px;
+  }
+
+  .cta-text h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ============================================= */
+/* SMOOTH SCROLL */
+/* ============================================= */
+html {
+  scroll-behavior: smooth;
+}
