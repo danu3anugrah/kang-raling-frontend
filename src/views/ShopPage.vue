@@ -37,7 +37,7 @@
         <div class="quick-actions">
           <!-- Tombol ke Shopee -->
           <a
-            href="https://id.shp.ee/gvouhqX"
+            href="."
             target="_blank"
             class="action-btn shopee"
           >
@@ -47,7 +47,7 @@
           
           <!-- Tombol ke WhatsApp -->
           <a
-            href="https://wa.me/6289693773669?text=Halo%20Kang%20Raling,%20saya%20ingin%20bertanya%20tentang%20produk"
+            href="https://wa.me/6282129029321?text=Halo%20Kang%20Raling,%20saya%20ingin%20bertanya%20tentang%20produk"
             target="_blank"
             class="action-btn whatsapp"
           >
@@ -77,7 +77,7 @@
             </div>
             <div class="info-text">
               <h4>Produk Terpercaya</h4>
-              <p>100% hasil daur ulang berkualitas</p>
+              <p>Hasil daur ulang berkualitas</p>
             </div>
           </div>
 
@@ -137,7 +137,7 @@
                   <div class="product-actions">
                     <!-- Tombol beli di Shopee -->
                     <a
-                      href="https://id.shp.ee/H5s9LsG"
+                      href="."
                       target="_blank"
                       class="btn-shopee"
                     >
@@ -147,7 +147,7 @@
                     
                     <!-- Tombol chat WhatsApp -->
                     <a
-                      href="https://wa.me/6289693773669?text=Halo%20Kang%20Raling,%20saya%20tertarik%20dengan%20produk%20Ecobrick"
+                      href="https://wa.me/6282129029321?text=Halo%20Kang%20Raling,%20saya%20tertarik%20dengan%20produk%20Ecobrick"
                       target="_blank"
                       class="btn-whatsapp"
                     >
@@ -174,7 +174,7 @@
                 <div class="product-footer">
                   <div class="product-actions">
                     <a
-                      href="https://id.shp.ee/5At5Myv"
+                      href="."
                       target="_blank"
                       class="btn-shopee"
                     >
@@ -182,7 +182,7 @@
                       Beli di Shopee
                     </a>
                     <a
-                      href="https://wa.me/6289693773669?text=Halo%20Kang%20Raling,%20saya%20tertarik%20dengan%20produk%20Gantungan%20Kunci"
+                      href="https://wa.me/6282129029321?text=Halo%20Kang%20Raling,%20saya%20tertarik%20dengan%20produk%20Gantungan%20Kunci"
                       target="_blank"
                       class="btn-whatsapp"
                     >
@@ -209,7 +209,7 @@
                 <div class="product-footer">
                   <div class="product-actions">
                     <a
-                      href="https://id.shp.ee/cZfsXK6"
+                      href="."
                       target="_blank"
                       class="btn-shopee"
                     >
@@ -217,7 +217,7 @@
                       Beli di Shopee
                     </a>
                     <a
-                      href="https://wa.me/6289693773669?text=Halo%20Kang%20Raling,%20saya%20tertarik%20dengan%20produk%20Kotak%20Tisu"
+                      href="https://wa.me/6282129029321?text=Halo%20Kang%20Raling,%20saya%20tertarik%20dengan%20produk%20Kotak%20Tisu"
                       target="_blank"
                       class="btn-whatsapp"
                     >
@@ -293,7 +293,7 @@
             
             <!-- Tombol CTA -->
             <a
-              href="https://wa.me/6289693773669?text=Halo%20Kang%20Raling,%20saya%20ingin%20bertanya"
+              href="https://wa.me/6282129029321?text=Halo%20Kang%20Raling,%20saya%20ingin%20bertanya"
               target="_blank"
               class="btn-cta"
             >

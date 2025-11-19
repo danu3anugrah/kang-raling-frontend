@@ -335,7 +335,7 @@
               <p>Tim kami siap membantu Anda dengan senang hati!</p>
             </div>
             <a
-              href="https://wa.me/6289693773669?text=Halo%20Kang%20Raling,%20saya%20ingin%20bertanya"
+              href="https://wa.me/6282129029321?text=Halo%20Kang%20Raling,%20saya%20ingin%20bertanya"
               target="_blank"
               class="btn-cta"
             >

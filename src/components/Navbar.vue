@@ -45,7 +45,7 @@
         <!-- Login Button (Mobile & Desktop) -->
         <li class="nav-login">
           <router-link to="/login" class="btn-login" @click="closeMenu">
-            Masuk
+            Login
           </router-link>
         </li>
       </ul>

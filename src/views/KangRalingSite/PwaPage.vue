@@ -199,7 +199,7 @@
           <!-- Area foto profil fasilitator -->
           <div class="fasilitator-image">
             <img
-              src="@/assets/icons/profile/tini_fasil.png"
+              src="@/assets/icons/profile/fasil_tini.png"
               alt="Fasilitator"
             />
             <!-- Badge identitas sebagai fasilitator -->

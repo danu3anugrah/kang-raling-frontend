@@ -23,7 +23,7 @@
           <div class="login-form-section">
             <div class="form-wrapper">
               <div class="form-header">
-                <img src="@/assets/images/logokangraling.png" alt="Logo Kang Raling" class="form-logo">
+                <img src="@/assets/images/logo_kangraling.webp" alt="Logo Kang Raling" class="form-logo">
                 <h3>Login Fasilitator</h3>
                 <p>Silakan masuk dengan akun Anda</p>
               </div>

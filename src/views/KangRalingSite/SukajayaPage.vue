@@ -202,7 +202,7 @@
           <!-- Area foto profil -->
           <div class="fasilitator-image">
             <img
-              src="@/assets/icons/profile/fasil1.jpg"
+              src="@/assets/icons/profile/fasilitator.jpg"
               alt="Fasilitator"
             />
             <!-- Badge identitas sebagai fasilitator -->

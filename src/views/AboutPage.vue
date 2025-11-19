@@ -50,8 +50,8 @@
             <div class="intro-image">
               <!-- TEMPAT FOTO KANG RALING -->
               <div class="image-container">
-                <img 
-                  src="@/assets/images/home/homei.webp" 
+                <img
+                  src="@/assets/images/home/homei.webp"
                   alt="Logo Kang Raling"
                   class="kang-raling-image"
                   @error="handleImageError"
@@ -65,10 +65,11 @@
             <div class="intro-text">
               <h2 class="section-title">Tentang Kang Raling</h2>
               <p class="text-content">
-                <strong>Kang Raling (Kampung Ramah Lingkungan)</strong> adalah Program
-                peningkatan peran serta masyarakat dalam pengelolaan sampah dan
-                perbaikan lingkungan dengan membangun model pengelolaan sampah
-                yang berkelanjutan di tingkat kawasan setingkat RW/Desa
+                <strong>Kang Raling (Kampung Ramah Lingkungan)</strong> adalah
+                Program peningkatan peran serta masyarakat dalam pengelolaan
+                sampah dan perbaikan lingkungan dengan membangun model
+                pengelolaan sampah yang berkelanjutan di tingkat kawasan
+                setingkat RW/Desa
               </p>
               <p class="text-content">
                 Sejak didirikan, Kang Raling telah menjadi pelopor dalam gerakan
@@ -170,23 +171,12 @@
             <div class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <h4>2020</h4>
-                <h5>Awal Berdiri</h5>
-                <p>
-                  Program Kang Raling resmi diluncurkan dengan fokus pada 2 desa
-                  percontohan di Kabupaten Garut.
-                </p>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-dot"></div>
-              <div class="timeline-content">
                 <h4>2021</h4>
-                <h5>Ekspansi Program</h5>
+                <h5>Awal Perjalanan</h5>
                 <p>
-                  Perluasan ke 5 desa binaan dengan pembangunan TPS3R dan
-                  pelatihan intensif untuk warga.
+                  Kang Raling memulai perjalanan dengan proses belajar dan
+                  pengembangan konsep pengelolaan sampah berbasis komunitas di
+                  tingkat desa.
                 </p>
               </div>
             </div>
@@ -195,10 +185,11 @@
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <h4>2022</h4>
-                <h5>Inovasi Digital</h5>
+                <h5>Kang Raling Berkembang</h5>
                 <p>
-                  Peluncuran website dan sistem pencatatan digital untuk
-                  monitoring data sampah real-time.
+                  Program mulai menunjukkan perkembangan signifikan dengan
+                  peningkatan partisipasi warga dan sistem pengelolaan sampah
+                  yang lebih terstruktur.
                 </p>
               </div>
             </div>
@@ -207,10 +198,11 @@
               <div class="timeline-dot"></div>
               <div class="timeline-content">
                 <h4>2023</h4>
-                <h5>Pengembangan Produk</h5>
+                <h5>Desa Binaan Pertama Sukses</h5>
                 <p>
-                  Membuka Kang Raling Store dengan produk-produk hasil daur
-                  ulang berkualitas tinggi.
+                  Beberapa desa binaan awal berhasil menunjukkan kemajuan luar
+                  biasa dalam 1 tahun, menjadi bukti konsep yang efektif dan
+                  inspirasi bagi desa lainnya.
                 </p>
               </div>
             </div>
@@ -218,11 +210,25 @@
             <div class="timeline-item">
               <div class="timeline-dot"></div>
               <div class="timeline-content">
-                <h4>2024-2025</h4>
-                <h5>Masa Kini</h5>
+                <h4>2024</h4>
+                <h5>Ekspansi Program</h5>
                 <p>
-                  Terus berkembang dengan lebih banyak desa binaan, program
-                  edukasi, dan dampak positif untuk lingkungan.
+                  Memperluas jangkauan ke desa-desa baru yang memiliki TPS3R,
+                  dengan desa binaan awal menjadi model percontohan dan mentor
+                  bagi desa baru.
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <h4>2025</h4>
+                <h5>Era Digital Kang Raling</h5>
+                <p>
+                  Transformasi menuju solusi digital lengkap dengan sistem
+                  monitoring terintegrasi, platform edukasi online, dan toko
+                  digital untuk produk daur ulang.
                 </p>
               </div>
             </div>
@@ -237,12 +243,11 @@
           </h2>
 
           <div class="team-grid" :class="teamGridClass">
-
-            <!-- Team Member 2 -->
+            <!-- Team Member 1 -->
             <div class="team-card">
               <div class="team-avatar">
-                <img 
-                  src="@/assets/icons/profile/kadis.jpg"
+                <img
+                  src="@/assets/icons/profile/fasil_tini.png"
                   alt="Tini Martini Tapran"
                   class="team-photo"
                   @error="handleTeamPhotoError(1)"
@@ -258,7 +263,7 @@
             <!-- Team Member 3 -->
             <div class="team-card">
               <div class="team-avatar">
-                <img 
+                <img
                   src="@/assets/icons/profile/fasil_iqbal.jpeg"
                   alt="Iqbal Akbar Mujahid Akbar, S.E."
                   class="team-photo"
@@ -268,14 +273,14 @@
                   <i class="bi bi-person-circle"></i>
                 </div>
               </div>
-              <h4>Iqbal Akbar</h4>
+              <h4>Muhammad Iqbal Mujahid Akbar, S.E.</h4>
               <p class="team-role">Fasilitator</p>
             </div>
 
             <!-- Team Member 4 -->
             <div class="team-card">
               <div class="team-avatar">
-                <img 
+                <img
                   src="@/assets/icons/profile/fasil_rivan.jpeg"
                   alt="Rivan Alawi, S.Hut."
                   class="team-photo"
@@ -285,14 +290,14 @@
                   <i class="bi bi-person-circle"></i>
                 </div>
               </div>
-              <h4>Rivan Alawi</h4>
+              <h4>Rivan Alawi, S.Hut.</h4>
               <p class="team-role">Fasilitator</p>
             </div>
 
             <!-- Team Member 5 -->
             <div class="team-card">
               <div class="team-avatar">
-                <img 
+                <img
                   src="@/assets/icons/profile/fasil_rifki.jpg"
                   alt="Rifki Akbar, S.Kom."
                   class="team-photo"
@@ -302,14 +307,14 @@
                   <i class="bi bi-person-circle"></i>
                 </div>
               </div>
-              <h4>Rifki Akbar</h4>
+              <h4>Rifki Akbar, S.Kom.</h4>
               <p class="team-role">Fasilitator</p>
             </div>
 
             <!-- Team Member 6 -->
             <div class="team-card">
               <div class="team-avatar">
-                <img 
+                <img
                   src="@/assets/icons/profile/fasil_elni.jpeg"
                   alt="Elni Pujayanti, S.H."
                   class="team-photo"
@@ -319,15 +324,15 @@
                   <i class="bi bi-person-circle"></i>
                 </div>
               </div>
-              <h4>Elni Pujayanti</h4>
+              <h4>Elni Pujayanti, S.H.</h4>
               <p class="team-role">Fasilitator</p>
             </div>
 
             <!-- Team Member 7 -->
             <div class="team-card">
               <div class="team-avatar">
-                <img 
-                  src="@/assets/icons/profile/kadis.jpg"
+                <img
+                  src="@/assets/icons/profile/fasilitator.jpg"
                   alt="Iman Septiana"
                   class="team-photo"
                   @error="handleTeamPhotoError(6)"
@@ -336,7 +341,7 @@
                   <i class="bi bi-person-circle"></i>
                 </div>
               </div>
-              <h4>Iman Septiana</h4>
+              <h4>Iman Putra Sepriaman, S.T.</h4>
               <p class="team-role">Fasilitator</p>
             </div>
           </div>
@@ -355,7 +360,11 @@
                 kemitraan
               </p>
             </div>
-            <a href="/contact" class="btn-cta">
+            <a
+              href="https://wa.me/6282129029321?text=Halo%20Kang%20Raling,%20saya%20ingin%20bertanya"
+              target="_blank"
+              class="btn-cta"
+            >
               Hubungi Kami
               <i class="bi bi-arrow-right"></i>
             </a>
@@ -375,7 +384,7 @@ import Footer from "@/components/Footer.vue";
 import { ref, computed } from "vue";
 
 // IMPORT CSS STYLESHEET
-import '@/assets/css/about.css';
+import "@/assets/css/about.css";
 
 // State untuk handle error loading image
 const imageError = ref(false);
@@ -403,6 +412,6 @@ const handleTeamPhotoError = (index) => {
  */
 const teamGridClass = computed(() => {
   const teamCount = 7; // Total 7 anggota tim
-  return teamCount % 2 !== 0 ? 'team-grid-centered' : 'team-grid';
+  return teamCount % 2 !== 0 ? "team-grid-centered" : "team-grid";
 });
 </script>

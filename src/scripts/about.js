@@ -12,54 +12,59 @@ export const ABOUT_CONSTANTS = {
       value: "5+",
       label: "Desa Binaan",
       description: "Desa yang telah menjadi binaan program Kang Raling",
-      icon: "bi-house-check"
+      icon: "bi-house-check",
     },
     {
-      value: "500+",
+      value: "1000+",
       label: "Warga Terlayani",
       description: "Jumlah warga yang merasakan manfaat program",
-      icon: "bi-people"
+      icon: "bi-people",
     },
     {
-      value: "10 Ton+",
+      value: "1000 Ton+",
       label: "Sampah Dikelola",
       description: "Total sampah yang berhasil dikelola secara proper",
-      icon: "bi-recycle"
-    }
+      icon: "bi-recycle",
+    },
   ],
-  
+
   TIMELINE: [
     {
-      year: "2020",
-      title: "Awal Berdiri",
-      description: "Program Kang Raling resmi diluncurkan dengan fokus pada 2 desa percontohan di Kabupaten Garut.",
-      icon: "bi-flag"
-    },
-    {
       year: "2021",
-      title: "Ekspansi Program",
-      description: "Perluasan ke 5 desa binaan dengan pembangunan TPS3R dan pelatihan intensif untuk warga.",
-      icon: "bi-arrow-expand"
+      title: "Awal Perjalanan",
+      description:
+        "Kang Raling memulai perjalanan dengan proses belajar dan pengembangan konsep pengelolaan sampah berbasis komunitas di tingkat desa.",
+      icon: "bi-flag",
     },
     {
       year: "2022",
-      title: "Inovasi Digital",
-      description: "Peluncuran website dan sistem pencatatan digital untuk monitoring data sampah real-time.",
-      icon: "bi-laptop"
+      title: "Kang Raling Berkembang",
+      description:
+        "Program mulai menunjukkan perkembangan signifikan dengan peningkatan partisipasi warga dan sistem pengelolaan sampah yang lebih terstruktur.",
+      icon: "bi-arrow-expand",
     },
     {
       year: "2023",
-      title: "Pengembangan Produk",
-      description: "Membuka Kang Raling Store dengan produk-produk hasil daur ulang berkualitas tinggi.",
-      icon: "bi-shop"
+      title: "Desa Binaan Pertama Sukses",
+      description:
+        "Beberapa desa binaan awal berhasil menunjukkan kemajuan luar biasa dalam 1 tahun, menjadi bukti konsep yang efektif dan inspirasi bagi desa lainnya.",
+      icon: "bi-trophy",
     },
     {
-      year: "2024-2025",
-      title: "Masa Kini",
-      description: "Terus berkembang dengan lebih banyak desa binaan, program edukasi, dan dampak positif untuk lingkungan.",
-      icon: "bi-graph-up"
-    }
-  ]
+      year: "2024",
+      title: "Ekspansi Program",
+      description:
+        "Memperluas jangkauan ke desa-desa baru yang memiliki TPS3R, dengan desa binaan awal menjadi model percontohan dan mentor bagi desa baru.",
+      icon: "bi-geo-expand",
+    },
+    {
+      year: "2025",
+      title: "Era Digital Kang Raling",
+      description:
+        "Transformasi menuju solusi digital lengkap dengan sistem monitoring terintegrasi, platform edukasi online, dan toko digital untuk produk daur ulang.",
+      icon: "bi-laptop",
+    },
+  ],
 };
 
 // Utility functions
@@ -70,7 +75,7 @@ export function useAboutUtils() {
    * @returns {string} String yang sudah diformat
    */
   const formatNumber = (num) => {
-    return new Intl.NumberFormat('id-ID').format(num);
+    return new Intl.NumberFormat("id-ID").format(num);
   };
 
   /**
@@ -79,7 +84,7 @@ export function useAboutUtils() {
    * @returns {string} CSS class name
    */
   const getGridClass = (count) => {
-    return count % 2 !== 0 ? 'grid-centered' : 'grid-normal';
+    return count % 2 !== 0 ? "grid-centered" : "grid-normal";
   };
 
   /**
@@ -98,6 +103,6 @@ export function useAboutUtils() {
   return {
     formatNumber,
     getGridClass,
-    handleImageError
+    handleImageError,
   };
 }

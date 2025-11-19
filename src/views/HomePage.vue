@@ -15,7 +15,7 @@
     <section class="hero-landing">
       <!-- Overlay untuk efek visual -->
       <div class="hero-overlay"></div>
-      
+
       <!-- Container utama hero section -->
       <div class="hero-container">
         <!-- Bagian visual/logo -->
@@ -26,7 +26,7 @@
             class="hero-animation"
           />
         </div>
-        
+
         <!-- Bagian konten teks dan CTA -->
         <div class="hero-content">
           <h1 class="hero-title">
@@ -72,8 +72,8 @@
           </div>
           <h2 class="section-title">Solusi Digital Kang Raling</h2>
           <p class="section-desc">
-            Hadir untuk mempermudah pencatatan, edukasi, dan inovasi pengelolaan
-            sampah
+            hadir sebagai platform inovatif untuk transformasi pengelolaan
+            sampah berbasis digital di Kabupaten Garut.
           </p>
         </div>
 
@@ -81,7 +81,7 @@
         <div class="intro-content">
           <div class="intro-left">
             <img
-              src="@/assets/images/home/homie.webp" 
+              src="@/assets/images/home/homie.webp"
               alt="Logo Kang Raling"
               class="intro-logo"
             />
@@ -89,20 +89,29 @@
           <div class="intro-right">
             <!-- Deskripsi tentang Kang Raling -->
             <p class="intro-text">
-              <strong>Kang Raling (Kampung Ramah Lingkungan)</strong> hadir
-              sebagai upaya dalam pengurangan sampah di tingkat RW dan RT yang
-              diharapkan memiliki pengelolaan sampah yang baik dan benar.
+              Platform ini mengintegrasikan tiga pilar utama:
+              <strong>Edukasi</strong> melalui konten pembelajaran interaktif,
+              <strong>Publikasi</strong> kemajuan dan best practices pengelolaan
+              sampah, serta <strong>Monitoring Real-time</strong> data timbulan
+              sampah yang terupdate.
             </p>
             <p class="intro-text">
-              Program Kang Raling didukung oleh berbagai pihak terutama oleh
-              warga masyarakat sebagai penghasil sampah domestik. Pada tahun
-              2025 ini, Kang Raling berfokus pada lima lokasi yaitu Desa
-              Mekargalih, Kecamatan Tarogong Kidul, Desa Pakuwon Kecamatan
-              Cisurupan, Desa Banjar Sari, Desa Sukajaya, dan Desa Muara Sanding
-              yang wilayahnya sudah memiliki fasilitas pengelolaan sampah
-              seperti TPS 3R.
+              Dilengkapi dengan sistem pemantauan terintegrasi, Kang Raling
+              Digital memungkinkan pelacakan data timbulan sampah, memberikan
+              insight yang akurat untuk pengambilan keputusan dan evaluasi
+              kinerja pengelolaan sampah yang lebih efektif.
             </p>
-            
+            <p class="intro-text">
+              Pada tahun 2025 ini, platform digital Kang Raling telah
+              diimplementasikan di lima lokasi binaan:
+              <strong>Desa Mekargalih</strong> (Kec. Tarogong Kidul),
+              <strong>Desa Pakuwon</strong> (Kec. Cisurupan),
+              <strong>Desa Banjar Sari</strong>, <strong>Desa Sukajaya</strong>,
+              dan <strong>Desa Muara Sanding</strong> - yang semuanya telah
+              memiliki fasilitas pengelolaan sampah berbasis TPS 3R yang
+              terhubung dalam sistem digital terpadu.
+            </p>
+
             <!-- Highlight/fitur utama -->
             <div class="intro-highlights">
               <div class="highlight-item">
@@ -149,7 +158,7 @@
               <img src="@/assets/icons/home/pilar_01.webp" alt="Reduce" />
             </div>
             <h3>Reduce</h3>
-            <p class="pilar-subtitle">Kurangi Sampah</p>
+            <p class="pilar-subtitle"><strong>Kurangi Sampah</strong></p>
             <p>
               Kurangi penggunaan plastik dan pilih produk yang ramah lingkungan.
             </p>
@@ -162,7 +171,7 @@
               <img src="@/assets/icons/home/pilar_02.webp" alt="Reuse" />
             </div>
             <h3>Reuse</h3>
-            <p class="pilar-subtitle">Gunakan Kembali</p>
+            <p class="pilar-subtitle"><strong>Gunakan Kembali</strong></p>
             <p>
               Biasakan memakai ulang barang yang masih bisa dipakai supaya tidak
               langsung jadi sampah.
@@ -176,7 +185,7 @@
               <img src="@/assets/icons/home/pilar_03.webp" alt="Recycle" />
             </div>
             <h3>Recycle</h3>
-            <p class="pilar-subtitle">Daur Ulang</p>
+            <p class="pilar-subtitle"><strong>Daur Ulang</strong></p>
             <p>Ubah barang bekas jadi sesuatu yang baru dan bermanfaat.</p>
           </div>
 
@@ -187,7 +196,7 @@
               <img src="@/assets/icons/home/pilar_04.webp" alt="Carbon" />
             </div>
             <h3>Carbon Reduction</h3>
-            <p class="pilar-subtitle">Kurangi Jejak Karbon</p>
+            <p class="pilar-subtitle"><strong>Kurangi Jejak Karbon</strong></p>
             <p>
               Lakukan hal kecil seperti menanam pohon dan hemat energi untuk
               bantu jaga bumi.
@@ -236,7 +245,7 @@
             </div>
             <h3>Memisahkan Sampah</h3>
             <p>
-              Mulai dari rumah — pisahkan sampah organik dan anorganik agar
+              Mulai dari rumah dan pisahkan sampah organik dan anorganik agar
               mudah dikelola.
             </p>
           </div>
@@ -291,8 +300,8 @@
             <div class="stat-icon">
               <i class="bi bi-trash"></i>
             </div>
-            <div class="stat-number">500+</div>
-            <div class="stat-label">Kg Sampah Dikelola</div>
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Ton Sampah Dikelola</div>
           </div>
 
           <!-- Statistik 2: Desa Binaan -->
@@ -300,7 +309,7 @@
             <div class="stat-icon">
               <i class="bi bi-house-heart"></i>
             </div>
-            <div class="stat-number">10+</div>
+            <div class="stat-number">5+</div>
             <div class="stat-label">Desa Binaan</div>
           </div>
 
@@ -309,7 +318,7 @@
             <div class="stat-icon">
               <i class="bi bi-people"></i>
             </div>
-            <div class="stat-number">35+</div>
+            <div class="stat-number">20+</div>
             <div class="stat-label">Masyarakat Diberdayakan</div>
           </div>
         </div>
@@ -381,7 +390,10 @@
             target="_blank"
             class="partner-card"
           >
-            <img src="@/assets/images/home/logo_pemkab.webp" alt="Kabupaten Garut" />
+            <img
+              src="@/assets/images/home/logo_pemkab.webp"
+              alt="Kabupaten Garut"
+            />
           </a>
         </div>
       </div>
@@ -393,15 +405,15 @@
 </template>
 
 <script>
-import { onMounted } from 'vue'
-import Navbar from "@/components/Navbar.vue"
-import Footer from "@/components/Footer.vue"
+import { onMounted } from "vue";
+import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
-  name: 'HomePage',
+  name: "HomePage",
   components: {
     Navbar,
-    Footer
+    Footer,
   },
   setup() {
     /**
@@ -409,17 +421,17 @@ export default {
      * @param {string} id - ID element yang dituju
      */
     const scrollToSection = (id) => {
-      const element = document.getElementById(id)
+      const element = document.getElementById(id);
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" })
+        element.scrollIntoView({ behavior: "smooth" });
       }
-    }
+    };
 
     return {
-      scrollToSection
-    }
-  }
-}
+      scrollToSection,
+    };
+  },
+};
 </script>
 
 <!-- IMPORT FILE CSS EKSTERNAL -->

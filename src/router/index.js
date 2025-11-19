@@ -71,37 +71,37 @@ const routes = [
   {
     path: "/sukajaya",
     name: "Sukajaya",
-    component: SukajayaPage
+    component: SukajayaPage,
   },
   {
     path: "/mekargalih",
     name: "Mekargalih",
-    component: MekargalihPage
+    component: MekargalihPage,
   },
   {
     path: "/pakuwon",
     name: "Pakuwon",
-    component: PakuwonPage
+    component: PakuwonPage,
   },
   {
     path: "/sanding",
     name: "Sanding",
-    component: SandingPage
+    component: SandingPage,
   },
   {
     path: "/banjarsari",
     name: "Banjarsari",
-    component: BanjarsariPage
+    component: BanjarsariPage,
   },
   {
     path: "/pwa",
     name: "Peacesantren Welas Asih",
-    component: PwaPage
+    component: PwaPage,
   },
   {
     path: "/binangkit",
     name: "Bank Sampah Binangkit",
-    component: BinangkitPage
+    component: BinangkitPage,
   },
   {
     path: "/education",
@@ -117,7 +117,25 @@ const routes = [
     path: "/about",
     name: "About Us",
     component: () => import("@/views/AboutPage.vue"),
-  }
+  },
+  {
+    path: "/dashboard/users",
+    name: "DashboardUsers",
+    component: () => import("@/views/Dashboard/DashboardUsers.vue"),
+    meta: { requiresAuth: true, requiresAdmin: true },
+  },
+  {
+    path: "/dashboard/settings",
+    name: "DashboardSettings",
+    component: () => import("@/views/Dashboard/DashboardSettings.vue"),
+    meta: { requiresAuth: true },
+  },
+  {
+    path: "/dashboard/activity-log",
+    name: "DashboardActivityLog",
+    component: () => import("@/views/Dashboard/DashboardActivityLog.vue"),
+    meta: { requiresAuth: true, requiresAdmin: true },
+  },
 ];
 
 const router = createRouter({
@@ -133,16 +151,29 @@ const router = createRouter({
 });
 
 // Navigation Guard
-router.beforeEach((to, from, next) => {
+router.beforeEach(async (to, from, next) => {
   const authStore = useAuthStore();
 
+  // Check auth
   if (to.meta.requiresAuth && !authStore.isAuthenticated) {
     next("/login");
-  } else if (to.name === "Login" && authStore.isAuthenticated) {
-    next("/dashboard");
-  } else {
-    next();
+    return;
   }
+
+  // Check admin
+  if (to.meta.requiresAdmin && !authStore.isAdmin) {
+    alert("Akses ditolak! Hanya admin yang bisa mengakses halaman ini.");
+    next("/dashboard");
+    return;
+  }
+
+  // Redirect if already logged in
+  if (to.name === "Login" && authStore.isAuthenticated) {
+    next("/dashboard");
+    return;
+  }
+
+  next();
 });
 
 export default router;

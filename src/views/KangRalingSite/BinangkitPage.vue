@@ -1,5 +1,5 @@
 <!-- 
-  KOMPONEN VUE - KANG RALING SITE MUARA SANDING PAGE
+  KOMPONEN VUE - KANG RALING SITE MBank Sampah Binangkit
   Deskripsi: Halaman profil dan informasi tentang TPS 3R Binaan
   Tanggal: [15/11/2025]
   Developer: [Danu Tri Anugrah]
@@ -199,7 +199,7 @@
           <!-- Area foto profil fasilitator -->
           <div class="fasilitator-image">
             <img
-              src="@/assets/icons/profile/tini_fasil.png"
+              src="@/assets/icons/profile/fasil_tini.png"
               alt="Fasilitator"
             />
             <!-- Badge identitas sebagai fasilitator -->
