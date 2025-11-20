@@ -157,40 +157,32 @@
             <div class="pilar-icon-wrapper">
               <img src="@/assets/icons/home/pilar_01.webp" alt="Reduce" />
             </div>
-            <h3>Reduce</h3>
-            <p class="pilar-subtitle"><strong>Kurangi Sampah</strong></p>
-            <p>
-              Kurangi penggunaan plastik dan pilih produk yang ramah lingkungan.
-            </p>
+            <h3>Kurangi Sampah</h3>
+            <p class="pilar-subtitle"><strong>Gunakan wadah sendiri dan hindari plastik sekali pakai untuk mengurangi timbulan sampah dari sumbernya.</strong></p>
           </div>
 
           <!-- Pilar 2: Reuse -->
           <div class="pilar-card" data-aos="fade-up" data-aos-delay="100">
             <div class="pilar-number">02</div>
             <div class="pilar-icon-wrapper">
-              <img src="@/assets/icons/home/pilar_02.webp" alt="Reuse" />
+              <img src="@/assets/icons/home/pisahkan.webp" alt="Reuse" />
             </div>
-            <h3>Reuse</h3>
-            <p class="pilar-subtitle"><strong>Gunakan Kembali</strong></p>
-            <p>
-              Biasakan memakai ulang barang yang masih bisa dipakai supaya tidak
-              langsung jadi sampah.
-            </p>
+            <h3>Pisahkan Sampah</h3>
+            <p class="pilar-subtitle"><strong>Pisahkan sampah organik, anorganik, dan residu agar lebih mudah dikelola dan didaur ulang.</strong></p>
           </div>
 
           <!-- Pilar 3: Recycle -->
           <div class="pilar-card" data-aos="fade-up" data-aos-delay="200">
             <div class="pilar-number">03</div>
             <div class="pilar-icon-wrapper">
-              <img src="@/assets/icons/home/pilar_03.webp" alt="Recycle" />
+              <img src="@/assets/icons/home/manfaatkan.webp" alt="Recycle" />
             </div>
-            <h3>Recycle</h3>
-            <p class="pilar-subtitle"><strong>Daur Ulang</strong></p>
-            <p>Ubah barang bekas jadi sesuatu yang baru dan bermanfaat.</p>
+            <h3>Manfaatkan Sampah</h3>
+            <p class="pilar-subtitle"><strong>Ubah sampah menjadi kompos atau barang daur ulang agar memiliki nilai dan tidak terbuang percuma.</strong></p>
           </div>
 
           <!-- Pilar 4: Carbon Reduction -->
-          <div class="pilar-card" data-aos="fade-up" data-aos-delay="300">
+          <!-- <div class="pilar-card" data-aos="fade-up" data-aos-delay="300">
             <div class="pilar-number">04</div>
             <div class="pilar-icon-wrapper">
               <img src="@/assets/icons/home/pilar_04.webp" alt="Carbon" />
@@ -201,7 +193,7 @@
               Lakukan hal kecil seperti menanam pohon dan hemat energi untuk
               bantu jaga bumi.
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
