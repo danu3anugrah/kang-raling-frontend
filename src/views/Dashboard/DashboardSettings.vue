@@ -1,10 +1,10 @@
 <template>
   <div class="dashboard-layout">
     <DashboardSidebar />
-    
+
     <div class="dashboard-content">
       <DashboardHeader />
-      
+
       <div class="content-wrapper">
         <section class="content-header">
           <div class="container-fluid">
@@ -19,38 +19,44 @@
               <div class="col-lg-6">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title"><i class="bi bi-person"></i> Informasi Profil</h3>
+                    <h3 class="card-title">
+                      <i class="bi bi-person"></i> Informasi Profil
+                    </h3>
                   </div>
                   <div class="card-body">
                     <form @submit.prevent="updateProfile">
                       <div class="mb-3">
                         <label class="form-label">Nama Lengkap</label>
-                        <input 
-                          type="text" 
-                          class="form-control" 
+                        <input
+                          type="text"
+                          class="form-control"
                           v-model="profileForm.name"
                           required
-                        >
+                        />
                       </div>
 
                       <div class="mb-3">
                         <label class="form-label">Email</label>
-                        <input 
-                          type="email" 
-                          class="form-control" 
+                        <input
+                          type="email"
+                          class="form-control"
                           v-model="profileForm.email"
                           required
-                        >
+                        />
                       </div>
 
                       <div class="mb-3">
                         <label class="form-label">Role</label>
-                        <input 
-                          type="text" 
-                          class="form-control" 
-                          :value="userRole === 'admin' ? 'Administrator' : 'Fasilitator'"
+                        <input
+                          type="text"
+                          class="form-control"
+                          :value="
+                            userRole === 'admin'
+                              ? 'Administrator'
+                              : 'Fasilitator'
+                          "
                           disabled
-                        >
+                        />
                       </div>
 
                       <div class="alert alert-success" v-if="profileSuccess">
@@ -61,9 +67,15 @@
                         {{ profileError }}
                       </div>
 
-                      <button type="submit" class="btn btn-primary" :disabled="profileSubmitting">
+                      <button
+                        type="submit"
+                        class="btn btn-primary"
+                        :disabled="profileSubmitting"
+                      >
                         <span v-if="profileSubmitting">Menyimpan...</span>
-                        <span v-else><i class="bi bi-save"></i> Simpan Perubahan</span>
+                        <span v-else
+                          ><i class="bi bi-save"></i> Simpan Perubahan</span
+                        >
                       </button>
                     </form>
                   </div>
@@ -74,32 +86,36 @@
               <div class="col-lg-6">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="card-title"><i class="bi bi-key"></i> Ganti Password</h3>
+                    <h3 class="card-title">
+                      <i class="bi bi-key"></i> Ganti Password
+                    </h3>
                   </div>
                   <div class="card-body">
                     <form @submit.prevent="changePassword">
                       <div class="mb-3">
                         <label class="form-label">Password Baru</label>
-                        <input 
-                          type="password" 
-                          class="form-control" 
+                        <input
+                          type="password"
+                          class="form-control"
                           v-model="passwordForm.new_password"
                           placeholder="Minimal 8 karakter"
                           required
                           minlength="8"
-                        >
+                        />
                       </div>
 
                       <div class="mb-3">
-                        <label class="form-label">Konfirmasi Password Baru</label>
-                        <input 
-                          type="password" 
-                          class="form-control" 
+                        <label class="form-label"
+                          >Konfirmasi Password Baru</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
                           v-model="passwordForm.confirm_password"
                           placeholder="Ketik ulang password baru"
                           required
                           minlength="8"
-                        >
+                        />
                       </div>
 
                       <div class="alert alert-success" v-if="passwordSuccess">
@@ -110,9 +126,16 @@
                         {{ passwordError }}
                       </div>
 
-                      <button type="submit" class="btn btn-danger" :disabled="passwordSubmitting">
+                      <button
+                        type="submit"
+                        class="btn btn-danger"
+                        :disabled="passwordSubmitting"
+                      >
                         <span v-if="passwordSubmitting">Mengubah...</span>
-                        <span v-else><i class="bi bi-shield-lock"></i> Ganti Password</span>
+                        <span v-else
+                          ><i class="bi bi-shield-lock"></i> Ganti
+                          Password</span
+                        >
                       </button>
                     </form>
                   </div>
@@ -140,104 +163,110 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { useAuthStore } from '../../stores/auth'
-import DashboardSidebar from '../../components/Dashboard/DashboardSidebar.vue'
-import DashboardHeader from '../../components/Dashboard/DashboardHeader.vue'
-import userService from '../../services/userService'
+import { ref, computed, onMounted } from "vue";
+import { useAuthStore } from "../../stores/auth";
+import DashboardSidebar from "../../components/Dashboard/DashboardSidebar.vue";
+import DashboardHeader from "../../components/Dashboard/DashboardHeader.vue";
+import userService from "../../services/userService";
 
-const authStore = useAuthStore()
-const userRole = computed(() => authStore.userRole)
-const currentUserId = computed(() => authStore.user?.id)
+const authStore = useAuthStore();
+const userRole = computed(() => authStore.userRole);
+const currentUserId = computed(() => authStore.user?.id);
 
 const profileForm = ref({
-  name: '',
-  email: ''
-})
+  name: "",
+  email: "",
+});
 
 const passwordForm = ref({
-  new_password: '',
-  confirm_password: ''
-})
+  new_password: "",
+  confirm_password: "",
+});
 
-const profileSubmitting = ref(false)
-const passwordSubmitting = ref(false)
-const profileSuccess = ref('')
-const passwordSuccess = ref('')
-const profileError = ref('')
-const passwordError = ref('')
+const profileSubmitting = ref(false);
+const passwordSubmitting = ref(false);
+const profileSuccess = ref("");
+const passwordSuccess = ref("");
+const profileError = ref("");
+const passwordError = ref("");
 
 // Load current user data
 onMounted(() => {
-  profileForm.value.name = authStore.user?.name || ''
-  profileForm.value.email = authStore.user?.email || ''
-})
+  profileForm.value.name = authStore.user?.name || "";
+  profileForm.value.email = authStore.user?.email || "";
+});
 
+// Update Profile
 // Update Profile
 const updateProfile = async () => {
   try {
-    profileSubmitting.value = true
-    profileError.value = ''
-    profileSuccess.value = ''
+    profileSubmitting.value = true;
+    profileError.value = "";
+    profileSuccess.value = "";
 
-    await userService.update(currentUserId.value, {
+    // 👇 GANTI INI - pakai updateProfile bukan update
+    await userService.updateProfile({
       name: profileForm.value.name,
       email: profileForm.value.email,
-      role: authStore.user.role,
-      is_active: true
-    })
+    });
 
     // Update auth store
-    authStore.user.name = profileForm.value.name
-    authStore.user.email = profileForm.value.email
+    authStore.user.name = profileForm.value.name;
+    authStore.user.email = profileForm.value.email;
 
-    profileSuccess.value = 'Profil berhasil diperbarui!'
-    
+    profileSuccess.value = "Profil berhasil diperbarui!";
+
     setTimeout(() => {
-      profileSuccess.value = ''
-    }, 3000)
+      profileSuccess.value = "";
+    }, 3000);
   } catch (err) {
-    profileError.value = err.response?.data?.message || 'Gagal memperbarui profil'
-    console.error('Error updating profile:', err)
+    profileError.value =
+      err.response?.data?.message || "Gagal memperbarui profil";
+    console.error("Error updating profile:", err);
   } finally {
-    profileSubmitting.value = false
+    profileSubmitting.value = false;
   }
-}
+};
 
 // Change Password
 const changePassword = async () => {
   try {
-    passwordSubmitting.value = true
-    passwordError.value = ''
-    passwordSuccess.value = ''
+    passwordSubmitting.value = true;
+    passwordError.value = "";
+    passwordSuccess.value = "";
 
     // Validate password match
-    if (passwordForm.value.new_password !== passwordForm.value.confirm_password) {
-      passwordError.value = 'Password tidak cocok!'
-      passwordSubmitting.value = false
-      return
+    if (
+      passwordForm.value.new_password !== passwordForm.value.confirm_password
+    ) {
+      passwordError.value = "Password tidak cocok!";
+      passwordSubmitting.value = false;
+      return;
     }
 
-    await userService.resetPassword(currentUserId.value, passwordForm.value.new_password)
+    // 👇 GANTI INI - pakai updatePassword
+    await userService.updatePassword(passwordForm.value.new_password);
 
-    passwordSuccess.value = 'Password berhasil diubah! Silakan login ulang dengan password baru.'
-    
+    passwordSuccess.value =
+      "Password berhasil diubah! Silakan login ulang dengan password baru.";
+
     // Clear form
-    passwordForm.value.new_password = ''
-    passwordForm.value.confirm_password = ''
+    passwordForm.value.new_password = "";
+    passwordForm.value.confirm_password = "";
 
     // Logout after 3 seconds
     setTimeout(async () => {
-      await authStore.logout()
-      window.location.href = '/login'
-    }, 3000)
+      await authStore.logout();
+      window.location.href = "/login";
+    }, 3000);
   } catch (err) {
-    passwordError.value = err.response?.data?.message || 'Gagal mengubah password'
-    console.error('Error changing password:', err)
+    passwordError.value =
+      err.response?.data?.message || "Gagal mengubah password";
+    console.error("Error changing password:", err);
   } finally {
-    passwordSubmitting.value = false
+    passwordSubmitting.value = false;
   }
-}
+};
 </script>
 
 <style scoped>

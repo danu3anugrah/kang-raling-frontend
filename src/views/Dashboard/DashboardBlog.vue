@@ -11,10 +11,7 @@
 -->
 <template>
   <div class="dashboard-layout">
-    
     <div class="dashboard-content">
-      <DashboardHeader />
-      
       <div class="main-content">
         <!-- Header Section -->
         <div class="content-header">

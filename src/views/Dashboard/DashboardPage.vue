@@ -1,10 +1,7 @@
 <template>
   <div class="dashboard-layout">
     <DashboardSidebar />
-    
     <div class="dashboard-content">
-      <DashboardHeader />
-      
       <div class="content-wrapper">
         <section class="content-header">
           <div class="container-fluid">
